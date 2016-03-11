@@ -1,5 +1,3 @@
-
-
 export function routing($urlRouterProvider, $stateProvider, $locationProvider) {
 
     $urlRouterProvider.otherwise('/');
