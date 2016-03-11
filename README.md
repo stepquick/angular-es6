@@ -1,5 +1,6 @@
 # angular15-es6-webpack
 [![devDependency Status](https://david-dm.org/stepquick/angular15-es6-webpack/dev-status.svg?branch=master)](https://david-dm.org/stepquick/angular15-es6-webpack#info=devDependencies)
+
 Angular 1.5 ES6 with Webpack
 
 This is a clean slate for me to learn more about component-styled angularJS development. Will apply towards learning more for ng2 as well.
