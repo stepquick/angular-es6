@@ -1,5 +1,5 @@
 # Angular 1.50 ES6 Webpack
-[![devDependency Status](https://david-dm.org/stepquick/angular15-es6-webpack/dev-status.svg?branch=master)](https://david-dm.org/stepquick/angular15-es6-webpack#info=devDependencies)
+[![devDependency Status](https://david-dm.org/stepquick/angular1.50-es6-webpack/dev-status.svg?branch=master)](https://david-dm.org/stepquick/angular15-es6-webpack#info=devDependencies)
 
 Angular 1.5 ES6 with Webpack
 
