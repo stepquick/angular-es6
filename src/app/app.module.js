@@ -3,8 +3,8 @@ import uirouter from 'angular-ui-router';
 
 import { routing } from './app.config.js';
 
-import AppComponent from './app-component/app-component';
-import template from './app-component/app-component.tpl.html';
+import AppComponent from './app.component';
+import template from './app.tpl.html';
 
 export default angular
     .module('main.app', [uirouter])

@@ -1,10 +1,12 @@
+
+
 export function routing($urlRouterProvider, $stateProvider, $locationProvider) {
 
     $urlRouterProvider.otherwise('/');
 
     $stateProvider
         .state('app', {
-            url: "/",
+            abstract: true,
             template: '<app-component></app-component>'
         });
 
