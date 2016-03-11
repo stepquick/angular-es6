@@ -38,7 +38,12 @@ module.exports = {
           jQuery: "jquery"
         })
     ],
-    progress: true,
-    colors: true,
-    debug: false,
+    node: {
+      global: 'window',
+      progress: false,
+      crypto: 'empty',
+      module: false,
+      clearImmediate: false,
+      setImmediate: false
+    }
 };
