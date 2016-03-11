@@ -33,6 +33,10 @@ module.exports = {
         new webpack.optimize.UglifyJsPlugin({
             mangle: false
         }),
+        new webpack.ProvidePlugin({
+          $: "jquery",
+          jQuery: "jquery"
+        })
     ],
     progress: true,
     colors: true,

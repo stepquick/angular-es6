@@ -31,6 +31,10 @@ module.exports = {
         new HtmlWebpackPlugin({ template: './src/index.html' }),
         new webpack.optimize.DedupePlugin(),
         new CleanWebpackPlugin(['dist']),
+        new webpack.ProvidePlugin({
+          $: "jquery",
+          jQuery: "jquery"
+        }),
         new webpack.optimize.CommonsChunkPlugin({name: 'vendor', filename: '[name].[hash].js', minChunks: Infinity}),
         new OpenBrowserWebpackPlugin({
               url: 'http://localhost:' +8080
