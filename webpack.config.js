@@ -5,7 +5,6 @@ var CleanWebpackPlugin = require('clean-webpack-plugin');
 var OpenBrowserWebpackPlugin = require('open-browser-webpack-plugin');
 
 module.exports = {
-
     devtool: 'inline-source-map',
     debug: true,
     resolve: {
