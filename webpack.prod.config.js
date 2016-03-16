@@ -16,6 +16,7 @@ module.exports = {
         path: './dist',
         filename: '[name].[hash].js',
         sourceMapFilename: '[name].[hash].map'
+        publicPath: '/angular1.50-es6-webpack/'
     },
     module: {
         loaders: [
