@@ -1,7 +1,7 @@
 export default class AppComponent {
 
     constructor() {
-        this.name = 'Step';
+        this.name = 'Stephen';
         this.year = new Date().getFullYear();
     }
 
