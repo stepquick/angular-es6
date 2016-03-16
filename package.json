@@ -19,7 +19,9 @@
   },
   "keywords": [
     "angular",
-    "es6"
+    "es6",
+    "bootstrap",
+    "jquery"
   ],
   "private": true,
   "author": "Stephen Quick",
