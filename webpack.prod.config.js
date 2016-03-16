@@ -10,7 +10,7 @@ module.exports = {
     },
     entry: {
         main: './src/main.js',
-        vendor: ['jquery', 'bootstrap', 'angular', 'angular-ui-bootstrap']
+        vendor: ['angular', 'angular-ui-bootstrap']
     },
     output: {
         path: './dist',
@@ -20,10 +20,13 @@ module.exports = {
     },
     module: {
         loaders: [
-            {test: /\.js$/, loader: 'babel', exclude: /(\.test.js$|node_modules)/},
-            {test: /\.css$/, loader: 'style!css'},
-            {test: /\.tpl.html/, loader: 'html'},
-            {test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/, loader: 'url?limit=50000'}
+            { test: /\.js$/, loader: 'babel', exclude: /(\.test.js$|node_modules)/ },
+            { test: /\.css$/, loader: 'style!css' },
+            { test: /\.tpl.html/, loader: 'html' },
+            { test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: "file" },
+            { test: /\.(woff|woff2)$/, loader:"url?prefix=font/&limit=5000" },
+            { test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000&mimetype=application/octet-stream" },
+            { test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000&mimetype=image/svg+xml" }
         ]
     },
     plugins: [
@@ -33,10 +36,6 @@ module.exports = {
         new webpack.optimize.CommonsChunkPlugin({ name: 'vendor', filename: '[name].[hash].js', minChunks: Infinity }),
         new webpack.optimize.UglifyJsPlugin({
             mangle: false
-        }),
-        new webpack.ProvidePlugin({
-          $: "jquery",
-          jQuery: "jquery"
         })
     ],
     node: {

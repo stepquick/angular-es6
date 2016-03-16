@@ -35,8 +35,7 @@
     "angular": "^1.5.0",
     "angular-ui-bootstrap": "^1.2.4",
     "angular-ui-router": "^0.2.18",
-    "bootstrap": "^3.3.6",
-    "jquery": "^2.2.1"
+    "bootstrap": "^3.3.6"
   },
   "devDependencies": {
     "babel-core": "^6.7.0",
