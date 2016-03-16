@@ -41,21 +41,3 @@ body > .container {
 .footer > .container a:hover {
     text-decoration: none;
 }
-
-.footer .row div {
-    padding: 10px 0px 0px 0px;
-}
-
-ul {
-    list-style-type: none;
-    margin-left: 0px;
-    padding-left: 0px;
-}
-
-
-.todo {
-    cursor: pointer;
-}
-.todo .done {
-    color: #006600;
-}
