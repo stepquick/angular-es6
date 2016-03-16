@@ -2,4 +2,7 @@
     <h1>About</h1>
     <h2>Via module '/app/about/about.module.js'</h2>
     <p>Test about page.</p>
+    <ul>
+      <li ng-repeat="list in $ctrl.lists track by $index">{{list}}</li>
+    </ul>
 </div>

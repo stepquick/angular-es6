@@ -5,6 +5,6 @@ export function routing($stateProvider) {
     $stateProvider
         .state('app.about', {
             url: '/about',
-            template
+            template: '<about-component></about-component>'
         });
 }
