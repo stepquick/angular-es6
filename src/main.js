@@ -9,10 +9,10 @@ import angularUiBootstrap from 'angular-ui-bootstrap';
 import app from './app/app.module';
 import home from './app/home/home.module';
 import about from './app/about/about.module';
-import common from './app/common/common.module';
+import components from './app/components/components.module';
 
 angular.module('main', [
-    angularUiBootstrap, app, home, about, common
+    angularUiBootstrap, app, home, about, components
 ]);
 
 angular.element(document).ready(() => {
