@@ -1,9 +1,7 @@
 export default class AppComponent {
-
-    constructor() {
-        this.name = 'Stephen Quick';
+    constructor(userService) {
+        this.name = userService.getName();
         this.year = new Date().getFullYear();
         this.navCollapsed = true;
     }
-
 }

@@ -1,9 +1,5 @@
 <div>
-    <nav-bar-component></nav-bar-component>
-
-    <div class="container" ui-view>
-
-    </div>
-
-    <footer-component></footer-component>
+    <nav-bar collapsed="$ctrl.navCollapsed"></nav-bar>
+    <div class="container" ui-view></div>
+    <site-footer name="$ctrl.name" year="$ctrl.year"></site-footer>
 </div>

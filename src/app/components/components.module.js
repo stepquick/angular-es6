@@ -1,12 +1,12 @@
 import angular from 'angular';
 
-import UserInfoComponent from './user-info/user-info.component';
-import NavBarComponent from './navbar/navbar.component';
-import FooterComponent from './footer/footer.component';
+import userInfo from './user-info/user-info';
+import navBar from './navbar/navbar';
+import footer from './footer/footer';
 
 export default angular
     .module('main.app.components', [])
-    .component('userInfoComponent', UserInfoComponent)
-    .component('navBarComponent', NavBarComponent)
-    .component('footerComponent', FooterComponent)
+    .component('userInfo', userInfo)
+    .component('navBar', navBar)
+    .component('siteFooter', footer)
     .name;

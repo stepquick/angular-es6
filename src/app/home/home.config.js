@@ -3,6 +3,6 @@ export function routing($stateProvider) {
     $stateProvider
         .state('app.home', {
             url: '/',
-            template: '<home-component></home-component>'
+            template: '<home-component name="$ctrl.name"></home-component>'
         });
 }

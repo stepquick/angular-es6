@@ -10,9 +10,10 @@ import app from './app/app.module';
 import home from './app/home/home.module';
 import about from './app/about/about.module';
 import components from './app/components/components.module';
+import services from './app/services/services.module';
 
 angular.module('main', [
-    angularUiBootstrap, app, home, about, components
+    angularUiBootstrap, app, home, about, components, services
 ]);
 
 angular.element(document).ready(() => {

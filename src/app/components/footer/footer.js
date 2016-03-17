@@ -1,5 +1,9 @@
 import template from './footer.tpl.html';
 
 export default {
-  template
+  template,
+  bindings: {
+    name : '<',
+    year : '<'
+  }
 };
