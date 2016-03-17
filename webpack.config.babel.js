@@ -1,9 +1,9 @@
-var webpack = require('webpack');
+import webpack from 'webpack';
 
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var OpenBrowserWebpackPlugin = require('open-browser-webpack-plugin');
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import OpenBrowserWebpackPlugin from 'open-browser-webpack-plugin';
 
-module.exports = {
+export default {
     devtool: 'inline-source-map',
     debug: true,
     entry: ['./src/main.js'],

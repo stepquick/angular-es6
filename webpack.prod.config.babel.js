@@ -1,9 +1,9 @@
-var webpack = require('webpack');
+import webpack from 'webpack';
 
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var CleanWebpackPlugin = require('clean-webpack-plugin');
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import CleanWebpackPlugin from 'clean-webpack-plugin';
 
-module.exports = {
+export default {
     resolve: {
         extensions: ['', '.js', '.tpl.html']
     },
