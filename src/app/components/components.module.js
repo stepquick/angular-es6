@@ -1,6 +1,6 @@
 import angular from 'angular';
 
-import UserInfoComponent from './user-info-component/user-info.component';
+import UserInfoComponent from './user-info/user-info.component';
 import NavBarComponent from './navbar/navbar.component';
 import FooterComponent from './footer/footer.component';
 
