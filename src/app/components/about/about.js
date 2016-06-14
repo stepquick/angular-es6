@@ -1,7 +1,6 @@
 import angular from 'angular';
 
 import AboutComponent from './about.component';
-import template from './about.tpl.html';
 
 const about = angular
     .module('main.app.about', [])

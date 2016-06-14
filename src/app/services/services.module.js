@@ -2,7 +2,9 @@ import angular from 'angular';
 
 import UserService from './user.service';
 
-export default angular
+const services = angular
     .module('main.app.services', [])
     .service('userService', UserService)
     .name;
+    
+export default services;

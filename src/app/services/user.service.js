@@ -1,4 +1,4 @@
-export default class UserService {
+class UserService {
   	constructor() {
         this.name = 'Stephen Quick';
   	}
@@ -7,3 +7,5 @@ export default class UserService {
       return this.name;
     }
 }
+
+export default UserService;

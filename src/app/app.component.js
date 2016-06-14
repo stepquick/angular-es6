@@ -1,7 +1,9 @@
-export default class AppComponent {
-    constructor(userService) {
-        this.name = userService.getName();
-        this.year = new Date().getFullYear();
-        this.navCollapsed = true;
-    }
-}
+import controller from './app.controller';
+import template from './app.tpl.html';
+
+const AppComponent = {
+    controller,
+    template
+};
+
+export default AppComponent;

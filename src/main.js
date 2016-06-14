@@ -6,8 +6,7 @@ import angular from 'angular';
 import angularUiBootstrap from 'angular-ui-bootstrap';
 
 //routes
-import app from './app/app.module';
-
+import app from './app/app';
 import components from './app/components/components';
 import common from './app/common/common';
 import services from './app/services/services.module';
