@@ -1,13 +1,13 @@
 import angular from 'angular';
 
-import userInfo from './user-info/user-info';
-import navBar from './nav/nav';
+import user from './user-info/user-info';
+import nav from './nav/nav';
 import footer from './footer/footer';
 
 const common = angular
     .module('main.app.common', [])
-    .component('userInfo', userInfo)
-    .component('navBar', navBar)
+    .component('userInfo', user)
+    .component('navBar', nav)
     .component('siteFooter', footer)
     .name;
 
