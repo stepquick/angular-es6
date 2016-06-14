@@ -5,7 +5,7 @@ import AppComponent from './app.component';
 
 const app = angular
 	.module('main.app', [uirouter])
-    .component('app', AppComponent)
+	.component('app', AppComponent)
 	.config(($urlRouterProvider, $stateProvider, $locationProvider) => {
 		$urlRouterProvider.otherwise('/');
 		$stateProvider
