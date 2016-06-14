@@ -2,18 +2,18 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './main.css';
 
-//import bootstrap from 'bootstrap';
 import angular from 'angular';
 import angularUiBootstrap from 'angular-ui-bootstrap';
 
+//routes
 import app from './app/app.module';
-import home from './app/home/home.module';
-import about from './app/about/about.module';
-import components from './app/components/components.module';
+
+import components from './app/components/components';
+import common from './app/common/common';
 import services from './app/services/services.module';
 
 angular.module('main', [
-    angularUiBootstrap, app, home, about, components, services
+    angularUiBootstrap, app, components, common, services
 ]);
 
 angular.element(document).ready(() => {

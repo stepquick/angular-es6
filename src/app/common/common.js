@@ -1,12 +1,14 @@
 import angular from 'angular';
 
 import userInfo from './user-info/user-info';
-import navBar from './navbar/navbar';
+import navBar from './nav/nav';
 import footer from './footer/footer';
 
-export default angular
-    .module('main.app.components', [])
+const common = angular
+    .module('main.app.common', [])
     .component('userInfo', userInfo)
     .component('navBar', navBar)
     .component('siteFooter', footer)
     .name;
+
+export default common;
