@@ -1,8 +1,8 @@
-const userInfo = {
-    bindings: {
-        name: '<'
-    },
-    template: '{{$ctrl.name}} <i class="glyphicon glyphicon-info-sign" uib-tooltip="Name is pulled via User Service"></i>'
-};
+import UserInfoComponent from './user-info.component';
+
+const userInfo = angular
+	.module('main.app.common.userInfo', [])
+	.component('userInfo', UserInfoComponent)
+	.name;
 
 export default userInfo;

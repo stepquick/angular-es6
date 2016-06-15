@@ -5,8 +5,7 @@ import nav from './nav';
 import footer from './footer';
 
 const common = angular
-    .module('main.app.common', [footer, nav])
-    .component('userInfo', user)
+    .module('main.app.common', [footer, nav, user])
     .name;
 
 export default common;
