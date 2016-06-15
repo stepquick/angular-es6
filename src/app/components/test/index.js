@@ -2,7 +2,7 @@ import angular from 'angular';
 
 import TestComponent from './test.component';
 
-export default angular
+const test = angular
     .module('main.app.test', [])
     .component('test', TestComponent)
     .config(($stateProvider) => {
@@ -13,3 +13,5 @@ export default angular
             });
     })
     .name;
+
+export default test;

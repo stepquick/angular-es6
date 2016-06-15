@@ -3,7 +3,7 @@ import angular from 'angular';
 import HomeComponent from './home.component';
 import template from './home.tpl.html';
 
-export default angular
+const home =  angular
 	.module('main.app.home', [])
 	.component('home', HomeComponent)
 	.config(($stateProvider) => {
@@ -14,3 +14,5 @@ export default angular
 			});
 	})
 	.name;
+
+export default home;
