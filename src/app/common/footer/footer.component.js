@@ -1,4 +1,4 @@
-const footer = {
+const FooterComponent = {
 	template: `
 		<footer class="footer">
 		    <div class="container">
@@ -16,4 +16,4 @@ const footer = {
 	}
 };
 
-export default footer;
+export default FooterComponent;

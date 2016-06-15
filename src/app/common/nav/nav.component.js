@@ -1,4 +1,7 @@
-const nav = {
+import controller from './nav.controller.js';
+
+const NavComponent = {
+	controller,
 	template: `
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
@@ -25,4 +28,4 @@ const nav = {
 	}
 };
 
-export default nav;
+export default NavComponent;
