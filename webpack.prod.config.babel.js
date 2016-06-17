@@ -3,7 +3,7 @@ import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import CleanWebpackPlugin from 'clean-webpack-plugin';
 
-export default {
+const config = {
     resolve: {
         extensions: ['', '.js', '.tpl.html']
     },
@@ -38,3 +38,5 @@ export default {
       setImmediate: false
     }
 };
+
+export default config;

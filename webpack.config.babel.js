@@ -3,11 +3,12 @@ import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import OpenBrowserWebpackPlugin from 'open-browser-webpack-plugin';
 
-export default {
+const config = {
     devtool: 'inline-source-map',
     debug: true,
     entry: ['./src/main.js'],
     output: {
+        path: './dist',
         filename: '[name].[hash].js',
         sourceMapFilename: '[name].[hash].map'
     },
@@ -35,3 +36,5 @@ export default {
       colors: true,
     }
 };
+
+export default config;
