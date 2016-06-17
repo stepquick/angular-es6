@@ -5,9 +5,9 @@
   "main": "src/main.js",
   "scripts": {
     "watch": "npm run watch:dev",
-    "watch:dev": "webpack --watch --progress --profile --colors --display-error-details --display-cached",
+    "watch:dev": "npm run build:dev -- --watch",
     "watch:dev:hmr": "npm run watch:dev -- --hot",
-    "watch:prod": "webpack --watch --config webpack.prod.config.babel.js --progress --profile --colors --display-error-details --display-cached",
+    "watch:prod": "npm run build:prod -- --watch",
     "build": "npm run build:dev",
     "build:dev": "webpack --progress --profile --colors --display-error-details --display-cached",
     "build:prod": "webpack --config webpack.prod.config.babel.js --progress --profile --colors --display-error-details --display-cached --bail",
