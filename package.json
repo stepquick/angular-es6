@@ -28,7 +28,7 @@
     "url": "https://github.com/stepquick/angular1.50-es6-webpack"
   },
   "author": "Stephen Quick",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "angular": "^1.5.6",
     "angular-ui-bootstrap": "^2.0.0",
