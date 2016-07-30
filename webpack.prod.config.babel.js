@@ -26,9 +26,7 @@ const config = {
         new CleanWebpackPlugin(['dist']),
         new HtmlWebpackPlugin({ template: './src/index.html' }),
         new webpack.optimize.DedupePlugin(),
-        new webpack.optimize.UglifyJsPlugin({
-            mangle: false
-        })
+        new webpack.optimize.UglifyJsPlugin()
     ],
     node: {
       global: 'window',
