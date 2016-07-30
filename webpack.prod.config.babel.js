@@ -10,6 +10,7 @@ const config = {
     entry: ['./src/main.js'],
     output: {
         path: './dist',
+        publicPath: '/angular-es6/',
         filename: '[name].[hash].js',
         sourceMapFilename: '[name].[hash].map',
     },

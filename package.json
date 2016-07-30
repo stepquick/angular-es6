@@ -16,6 +16,8 @@
     "server:dev:hmr": "npm run server:dev -- --hot",
     "server:prod": "npm run build:prod && http-server dist --cors",
     "start": "npm run server",
+    "push": "npm run build:prod && npm run deploy",
+    "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "keywords": [
     "angular",
