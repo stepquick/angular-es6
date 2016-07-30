@@ -3,19 +3,23 @@ import uirouter from 'angular-ui-router';
 
 import AppComponent from './app.component';
 
+const config = ($urlRouterProvider, $stateProvider, $locationProvider) => {
+	$urlRouterProvider.otherwise('/');
+	$stateProvider
+		.state('app', {
+			abstract: true,
+			template: '<app></app>'
+		});
+
+	$locationProvider.html5Mode(true);
+};
+
+config.$inject = ['$urlRouterProvider', '$stateProvider', '$locationProvider'];
+
 const app = angular
 	.module('main.app', [uirouter])
 	.component('app', AppComponent)
-	.config(($urlRouterProvider, $stateProvider, $locationProvider) => {
-		$urlRouterProvider.otherwise('/');
-		$stateProvider
-			.state('app', {
-				abstract: true,
-				template: '<app></app>'
-			});
-
-		$locationProvider.html5Mode(true);
-	})
+	.config(config)
 	.name;
 
 export default app;
