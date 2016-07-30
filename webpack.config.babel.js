@@ -9,6 +9,7 @@ const config = {
     entry: ['./src/main.js'],
     output: {
         path: './dist',
+        publicPath: '/angular-es6/',
         filename: '[name].[hash].js',
         sourceMapFilename: '[name].[hash].map'
     },
@@ -23,7 +24,7 @@ const config = {
     plugins: [
         new HtmlWebpackPlugin({ template: './src/index.html' }),
         new OpenBrowserWebpackPlugin({
-              url: 'http://localhost:' +8080
+              url: 'http://localhost:' +8080+'/angular-es6/'
         })
     ],
     tslint: {
