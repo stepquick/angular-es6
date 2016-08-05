@@ -7,9 +7,9 @@ const config = ($stateProvider) => {
 	$stateProvider
 		.state('app.home', {
 			url: '/',
-			template: '<home name="$ctrl.name"></home>'
+			template: '<home></home>'
 		});
-}
+};
 
 config.$inject = ['$stateProvider'];
 
