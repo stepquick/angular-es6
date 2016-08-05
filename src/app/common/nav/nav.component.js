@@ -12,7 +12,7 @@ const NavComponent = {
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" ui-sref="app.home">Angular JS 1.5</a>
+                    <a class="navbar-brand" ui-sref="app.home">Angular App</a>
                 </div>
                 <div id="navbar" class="collapse navbar-collapse" uib-collapse="$ctrl.collapsed">
                     <ul class="nav navbar-nav">
