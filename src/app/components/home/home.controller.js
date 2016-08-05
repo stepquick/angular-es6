@@ -1,7 +1,3 @@
-class HomeController {
-    constructor() {
-        this.test = 'test';
-    }
-}
+function HomeController() {}
 
 export default HomeController;

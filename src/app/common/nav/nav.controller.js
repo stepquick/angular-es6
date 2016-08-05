@@ -1,7 +1,5 @@
-class NavController {
-    constructor() {
-        this.collapsed = true;
-    }
+function NavController() {
+    this.collapsed = true;
 }
 
 export default NavController;

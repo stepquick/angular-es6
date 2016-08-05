@@ -1,7 +1,5 @@
-class AboutController {
-    constructor() {
-        this.lists = ['test', 'test', 'test2'];
-    }
+function AboutController() {
+    this.lists = ['test', 'test', 'test2'];
 }
 
 export default AboutController;

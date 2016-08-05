@@ -1,5 +1,3 @@
-class TestController {
-   constructor() {}
-}
+function TestController() {}
 
 export default TestController;
