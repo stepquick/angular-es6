@@ -2,8 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Angular 1.5 w/ ES6</title>
-        <base href="/angular-es6/">
+        <title><%= webpackConfig.metadata.title %></title>
+        <!-- base url -->
+        <base href="<%= webpackConfig.metadata.baseUrl %>">
     </head>
     <body>
         <ui-view></ui-view>

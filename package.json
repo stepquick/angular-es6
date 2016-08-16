@@ -9,10 +9,10 @@
     "watch:dev:hmr": "npm run watch:dev -- --hot",
     "watch:prod": "npm run build:prod -- --watch",
     "build": "npm run build:dev",
-    "build:dev": "webpack --progress --profile --colors --display-error-details --display-cached",
-    "build:prod": "webpack --config webpack.prod.config.babel.js --progress --profile --colors --display-error-details --display-cached --bail",
+    "build:dev": "webpack --config config/webpack.dev.babel.js --progress --profile --colors --display-error-details --display-cached",
+    "build:prod": "webpack --config config/webpack.prod.babel.js --progress --profile --colors --display-error-details --display-cached --bail",
     "server": "npm run server:dev:hmr",
-    "server:dev": "webpack-dev-server --inline --progress --profile --colors --watch --display-error-details --display-cached",
+    "server:dev": "webpack-dev-server --config config/webpack.dev.babel.js --inline --progress --profile --colors --watch --display-error-details --display-cached",
     "server:dev:hmr": "npm run server:dev -- --hot",
     "server:prod": "npm run build:prod && http-server dist --cors",
     "start": "npm run server",
@@ -21,8 +21,7 @@
   "keywords": [
     "angular",
     "es6",
-    "bootstrap",
-    "jquery"
+    "bootstrap"
   ],
   "repository": {
     "type": "git",
@@ -45,6 +44,7 @@
     "babel-runtime": "^6.11.6",
     "clean-webpack-plugin": "^0.1.10",
     "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
     "html-loader": "^0.4.3",
     "html-webpack-plugin": "^2.22.0",
@@ -53,6 +53,7 @@
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.1",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "^1.14.1",
+    "webpack-merge": "^0.14.1"
   }
 }
