@@ -2,6 +2,7 @@ import webpack from 'webpack';
 import webpackMerge from 'webpack-merge';
 import common from './webpack.common.babel';
 
+import CleanWebpackPlugin from 'clean-webpack-plugin';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
 const METADATA = webpackMerge(common.metadata, {
@@ -17,6 +18,9 @@ const config = webpackMerge(common, {
         sourceMapFilename: '[name].[hash].map',
     },
     plugins: [
+        new CleanWebpackPlugin(['dist'], {
+            root: process.cwd()
+        }),
         new webpack.optimize.DedupePlugin(),
         new webpack.optimize.UglifyJsPlugin(),
         new ExtractTextPlugin('[name].[hash].css')

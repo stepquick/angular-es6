@@ -1,5 +1,4 @@
 import webpack from 'webpack';
-import CleanWebpackPlugin from 'clean-webpack-plugin';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
@@ -33,10 +32,6 @@ const config = {
         }]
     },
     plugins: [
-        new CleanWebpackPlugin(['dist'], {
-            root: process.cwd()
-        }),
-
         new webpack.optimize.CommonsChunkPlugin({
             name: ['app']
         }),
