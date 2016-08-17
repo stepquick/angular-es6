@@ -9,9 +9,9 @@ const ENV = process.env.ENV = process.env.NODE_ENV = 'development';
 const HOST = process.env.HOST || 'localhost';
 const PORT = process.env.PORT || 3000;
 const METADATA = webpackMerge(common.metadata, {
-  host: HOST,
-  port: PORT,
-  ENV: ENV,
+    host: HOST,
+    port: PORT,
+    ENV: ENV,
 });
 
 const config = webpackMerge(common, {
@@ -24,14 +24,14 @@ const config = webpackMerge(common, {
     },
     plugins: [
         new OpenBrowserWebpackPlugin({
-              url: 'http://localhost:8080'
+            url: 'http://localhost:8080'
         }),
         new ExtractTextPlugin('[name].[hash].css')
     ],
     devServer: {
-    historyApiFallback: true,
-    stats: 'minimal'
-  }
+        historyApiFallback: true,
+        stats: 'minimal'
+    }
 });
 
 export default config;
