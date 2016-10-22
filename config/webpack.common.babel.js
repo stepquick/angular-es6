@@ -1,19 +1,19 @@
+import path from 'path';
 import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 const config = {
 	entry: {
-		'app': './src/main.js'
+		'app': path.resolve('./src/main.js')
 	},
 	resolve: {
 		extensions: ['.js', '.tpl.html'],
-        modules: ['./src', 'node_modules']
 	},
 	module: {
 		rules: [{
 			test: /\.js$/,
 			use: [{
-				loader: 'babel-loader'
+				loader: 'babel'
 			}],
 			exclude: /(\.test.js$|node_modules)/
 		}, {
@@ -26,7 +26,7 @@ const config = {
 		}, {
 			test: /\.tpl.html/,
 			use: [{
-				loader: 'html-loader'
+				loader: 'html'
 			}]
 		}, {
 			test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
