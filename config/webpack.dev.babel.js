@@ -7,7 +7,7 @@ import OpenBrowserWebpackPlugin from 'open-browser-webpack-plugin';
 const config = webpackMerge(common, {
     devtool: 'cheap-module-eval-source-map',
     output: {
-        path: __dirname + '/dist',
+        path: __dirname + '/../dist',
         publicPath: '/',
         filename: '[name].[hash].js',
         sourceMapFilename: '[name].[hash].map'

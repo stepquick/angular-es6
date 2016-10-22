@@ -6,7 +6,7 @@ import CleanWebpackPlugin from 'clean-webpack-plugin';
 
 const config = webpackMerge(common, {
     output: {
-        path: __dirname + '/dist',
+        path: __dirname + '/../dist',
         publicPath: '/angular-es6/',
         filename: '[name].[hash].js',
         sourceMapFilename: '[name].[hash].map',
