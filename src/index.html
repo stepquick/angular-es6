@@ -2,9 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title><%= webpackConfig.metadata.title %></title>
+         <meta name="description" content="<%= htmlWebpackPlugin.options.title %>">
+        <title><%= htmlWebpackPlugin.options.title %></title>
         <!-- base url -->
-        <base href="<%= webpackConfig.metadata.baseUrl %>">
+        <base href="<%= webpackConfig.output.publicPath %>">
     </head>
     <body>
         <ui-view></ui-view>
