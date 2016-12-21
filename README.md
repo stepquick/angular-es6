@@ -1,4 +1,4 @@
-# Angular 1.5.x ES6 built using Webpack
+# Angular 1.x ES6 built using Webpack
 [![dependencies Status](https://david-dm.org/stepquick/angular-es6/status.svg)](https://david-dm.org/stepquick/angular-es6)
 [![devDependency Status](https://david-dm.org/stepquick/angular-es6/dev-status.svg?branch=master)](https://david-dm.org/stepquick/angular-es6#info=devDependencies)
 
