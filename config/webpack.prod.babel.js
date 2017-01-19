@@ -16,7 +16,6 @@ const config = webpackMerge(common, {
         new CleanWebpackPlugin(['dist'], {
             root: process.cwd()
         }),
-        new webpack.NoErrorsPlugin(),
         new webpack.optimize.UglifyJsPlugin(),
     ]
 });
