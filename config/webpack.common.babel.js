@@ -43,7 +43,7 @@ const config = {
 			title: 'Angular 1.5 w/ ES6',
 		}),
 
-		new ExtractTextPlugin("styles.css")
+		new ExtractTextPlugin("[name].[hash].css")
 	],
 	node: {
 		global: true,
