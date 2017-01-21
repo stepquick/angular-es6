@@ -40,7 +40,7 @@ const config = {
 
 		new HtmlWebpackPlugin({
 			template: 'src/index.html',
-			title: 'Angular 1.5 w/ ES6',
+			title: 'Angular 1.x w/ ES6',
 		}),
 
 		new ExtractTextPlugin("[name].[hash].css")
