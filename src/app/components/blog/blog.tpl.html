@@ -1,0 +1,11 @@
+<div class="jumbotron">
+    <h1>Blog</h1>
+    <p>My feelings.</p>
+    <div class="row">
+        <div ng-repeat="post in $ctrl.posts track by $index">
+            <h2>{{post.title}}</h2>
+             <p><i><sub>{{post.date | date: 'MMMM dd, yyyy - h:mm a' }}</sub></i></p>
+            <p>{{post.body}}</p>
+        </div>
+    </div>
+</div>

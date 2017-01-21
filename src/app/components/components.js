@@ -2,10 +2,10 @@ import angular from 'angular';
 
 import home from './home';
 import about from './about';
-import test from './test';
+import blog from './blog';
 
 const components = angular
-	.module('main.app.components', [home, about, test])
+	.module('main.app.components', [home, about, blog])
 	.name;
 
 export default components;

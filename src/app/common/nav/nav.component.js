@@ -17,7 +17,7 @@ const NavComponent = {
                 <div id="navbar" class="collapse navbar-collapse" uib-collapse="$ctrl.collapsed">
                     <ul class="nav navbar-nav">
                         <li ui-sref-active="active"><a ui-sref="app.about">About</a></li>
-                        <li ui-sref-active="active"><a ui-sref="app.test">Test</a></li>
+                        <li ui-sref-active="active"><a ui-sref="app.blog">Blog</a></li>
                     </ul>
                 </div>
             </div>
