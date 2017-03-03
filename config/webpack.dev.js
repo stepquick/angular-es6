@@ -1,11 +1,11 @@
-import path from 'path';
-import webpack from 'webpack';
-import webpackMerge from 'webpack-merge';
-import common from './webpack.common.babel';
+const path = require('path');
+const webpack = require('webpack');
+const webpackMerge = require('webpack-merge');
+const common = require('./webpack.common.js');
 
-import OpenBrowserWebpackPlugin from 'open-browser-webpack-plugin';
+const OpenBrowserWebpackPlugin = require('open-browser-webpack-plugin');
 
-const config = webpackMerge(common, {
+module.exports = webpackMerge(common, {
     devtool: 'cheap-module-eval-source-map',
     output: {
         path: path.resolve('./dist'),
@@ -23,5 +23,3 @@ const config = webpackMerge(common, {
         stats: 'minimal'
     }
 });
-
-export default config;

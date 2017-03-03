@@ -1,11 +1,11 @@
-import path from 'path';
-import webpack from 'webpack';
-import webpackMerge from 'webpack-merge';
-import common from './webpack.common.babel';
+const path = require('path');
+const webpack = require('webpack');
+const webpackMerge = require('webpack-merge');
+const common = require('./webpack.common.js');
 
-import CleanWebpackPlugin from 'clean-webpack-plugin';
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
-const config = webpackMerge(common, {
+module.exports = webpackMerge(common, {
     output: {
         path: path.resolve('./dist'),
         publicPath: '/angular-es6/',
@@ -19,5 +19,3 @@ const config = webpackMerge(common, {
         new webpack.optimize.UglifyJsPlugin(),
     ]
 });
-
-export default config;
