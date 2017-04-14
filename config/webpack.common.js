@@ -40,7 +40,7 @@ module.exports = {
 
 		new HtmlWebpackPlugin({
 			template: 'src/index.html',
-			title: 'Angular 1.x w/ ES6',
+			title: 'AngularJS w/ ES6',
 		}),
 
 		new ExtractTextPlugin("[name].[hash].css")

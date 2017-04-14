@@ -8,7 +8,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 module.exports = webpackMerge(common, {
     output: {
         path: path.resolve('./dist'),
-        publicPath: '/angular-es6/',
+        publicPath: '/angularjs-es6/',
         filename: '[name].[hash].js',
         sourceMapFilename: '[name].[hash].map',
     },
