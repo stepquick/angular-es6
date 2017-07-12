@@ -1,9 +1,9 @@
-import path 'path'
-import webpack 'webpack'
-import webpackMerge 'webpack-merge'
-import common './webpack.common.babel'
+import path from 'path'
+import webpack from 'webpack'
+import webpackMerge from 'webpack-merge'
+import common from './webpack.common.babel'
 
-import CleanWebpackPlugin 'clean-webpack-plugin'
+import CleanWebpackPlugin from 'clean-webpack-plugin'
 
 export default webpackMerge(common, {
     output: {
