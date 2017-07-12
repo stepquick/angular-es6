@@ -1,5 +1,5 @@
 import angular from 'angular';
-import uirouter from 'angular-ui-router';
+import uiRouter from '@uirouter/angularjs';
 
 import AppComponent from './app.component';
 
@@ -17,7 +17,7 @@ const config = ($urlRouterProvider, $stateProvider, $locationProvider) => {
 config.$inject = ['$urlRouterProvider', '$stateProvider', '$locationProvider'];
 
 const app = angular
-	.module('main.app', [uirouter])
+	.module('main.app', [uiRouter])
 	.component('app', AppComponent)
 	.config(config)
 	.name;

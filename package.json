@@ -1,7 +1,7 @@
 {
-  "name": "angular150",
+  "name": "squick-angularJS-es6",
   "version": "1.0.0",
-  "description": "Angular 1.5.0 in ES6",
+  "description": "AngularJS with ES6",
   "main": "src/main.js",
   "scripts": {
     "watch": "npm run watch:dev",
@@ -9,10 +9,10 @@
     "watch:dev:hmr": "npm run watch:dev -- --hot",
     "watch:prod": "npm run build:prod -- --watch",
     "build": "npm run build:dev",
-    "build:dev": "webpack --config config/webpack.dev.js --progress --profile --colors --display-error-details --display-cached",
-    "build:prod": "webpack --config config/webpack.prod.js --progress --profile --colors --display-error-details --display-cached --bail",
+    "build:dev": "webpack --config config/webpack.dev.babel.js --progress --profile --colors --display-error-details --display-cached",
+    "build:prod": "webpack --config config/webpack.prod.babel.js --progress --profile --colors --display-error-details --display-cached --bail",
     "server": "npm run server:dev",
-    "server:dev": "webpack-dev-server --config config/webpack.dev.js --progress --profile --watch --content-base src/",
+    "server:dev": "webpack-dev-server --config config/webpack.dev.babel.js --progress --profile --watch --content-base src/",
     "start": "npm run server",
     "deploy": "git subtree push --prefix dist origin gh-pages"
   },
@@ -23,31 +23,31 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/stepquick/angular1.50-es6-webpack"
+    "url": "https://github.com/stepquick/angularjs-es6"
   },
   "author": "Stephen Quick",
   "license": "MIT",
   "dependencies": {
+    "@uirouter/angularjs": "latest",
     "angular": "^1.6.1",
     "angular-ui-bootstrap": "^2.3.1",
-    "angular-ui-router": "^0.4.0",
     "bootstrap": "^3.3.7"
   },
   "devDependencies": {
-    "babel-core": "^6.24.1",
-    "babel-loader": "^6.4.1",
-    "babel-preset-env": "^1.3.3",
+    "babel-core": "^6.2.5",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.5.2",
     "clean-webpack-plugin": "^0.1.16",
     "css-loader": "^0.28.0",
-    "extract-text-webpack-plugin": "^2.1.0",
+    "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^0.11.1",
     "html-loader": "^0.4.5",
-    "html-webpack-plugin": "^2.28.0",
+    "html-webpack-plugin": "^2.29.0",
     "open-browser-webpack-plugin": "0.0.5",
-    "style-loader": "^0.16.1",
-    "url-loader": "^0.5.8",
-    "webpack": "^2.3.3",
-    "webpack-dev-server": "^2.4.2",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.2.0",
+    "webpack-dev-server": "^2.5.1",
     "webpack-merge": "^4.1.0"
   }
 }

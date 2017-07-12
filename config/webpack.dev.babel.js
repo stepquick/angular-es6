@@ -1,11 +1,11 @@
-const path = require('path');
-const webpack = require('webpack');
-const webpackMerge = require('webpack-merge');
-const common = require('./webpack.common.js');
+import path from 'path'
+import webpack from 'webpack'
+import webpackMerge from 'webpack-merge'
+import common from './webpack.common.babel'
 
-const OpenBrowserWebpackPlugin = require('open-browser-webpack-plugin');
+import OpenBrowserWebpackPlugin from 'open-browser-webpack-plugin'
 
-module.exports = webpackMerge(common, {
+export default webpackMerge(common, {
     devtool: 'cheap-module-eval-source-map',
     output: {
         path: path.resolve('./dist'),
@@ -22,4 +22,4 @@ module.exports = webpackMerge(common, {
         historyApiFallback: true,
         stats: 'minimal'
     }
-});
+})
