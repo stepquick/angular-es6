@@ -1,6 +1,6 @@
 # AngularJS ES6 built using Webpack
 [![dependencies Status](https://david-dm.org/stepquick/angularjs-es6/status.svg)](https://david-dm.org/stepquick/angularjs-es6)
-[![devDependency Status](https://david-dm.org/stepquick/angularjs-es6/dev-status.svg?branch=master)](https://david-dm.org/stepquick/angularjs-es6#info=devDependencies)
+[![devDependencies Status](https://david-dm.org/stepquick/angularjs-es6/dev-status.svg)](https://david-dm.org/stepquick/angularjs-es6?type=dev)
 
 [Demo](http://stepquick.net/angularjs-es6/)
 
