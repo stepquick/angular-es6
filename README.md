@@ -1,7 +1,4 @@
 # AngularJS ES6 built using Webpack
-[![dependencies Status](https://david-dm.org/stepquick/angularjs-es6/status.svg)](https://david-dm.org/stepquick/angularjs-es6)
-[![devDependencies Status](https://david-dm.org/stepquick/angularjs-es6/dev-status.svg)](https://david-dm.org/stepquick/angularjs-es6?type=dev)
-
 [Demo](http://stepquick.net/angularjs-es6/)
 
 Built using best practices outlined on [Todd Motto's ES6/ES2015 Style guide](https://github.com/toddmotto/angular-styleguide).
